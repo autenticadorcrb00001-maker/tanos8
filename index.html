@@ -21,7 +21,7 @@
     width: 120px;
     opacity: 0;
     transform: scale(0.3);
-    animation: growIn 2.5s ease forwards;
+    animation: growIn 1.5s ease forwards;
   }
 
   @keyframes growIn {
@@ -44,6 +44,13 @@
 
   <!-- Logo puxada da pasta assets -->
   <img src="assets/logo.png" alt="Logo do App" class="logo" />
+
+  <script>
+    // Após 1.5 segundos (tempo da animação), redireciona para index1.html
+    setTimeout(() => {
+      window.location.href = "index1.html";
+    }, 1500);
+  </script>
 
 </body>
 </html>
