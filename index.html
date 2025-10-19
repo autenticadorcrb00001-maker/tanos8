@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tela de Abertura</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .logo {
+    width: 120px;
+    opacity: 0;
+    transform: scale(0.3);
+    animation: growIn 2.5s ease forwards;
+  }
+
+  @keyframes growIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+</style>
+</head>
+<body>
+
+  <!-- Logo puxada da pasta assets -->
+  <img src="assets/logo.png" alt="Logo do App" class="logo" />
+
+</body>
+</html>
